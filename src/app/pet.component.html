@@ -1,0 +1,25 @@
+<table class="pet">
+	<tr>
+		<th>Property Name</th>
+		<th>Property Value</th>
+	</tr>
+	<tr>
+		<td>Now Selling</td>
+		<td>{{ pet.kind }}</td>
+	</tr>
+	<tr>
+		<td>Age</td>
+		<td>{{ pet.age }}</td>
+	</tr>
+	<tr>
+		<td>Skin Color</td>
+		<td>
+			<i class="ps__skin" [ngStyle]="{background: pet.skinColor}"></i>
+			{{ pet.skinColor | uppercase }}
+		</td>
+	</tr>
+	<tr>
+		<td>Price</td>
+		<td>{{ pet.price | currency }}</td>
+	</tr>
+</table>
