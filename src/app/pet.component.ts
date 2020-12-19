@@ -8,7 +8,7 @@ import { PetService } from "./pets/pet.service";
   selector: "app-pet",
   templateUrl: "./pet.component.html",
   styleUrls: ["./pet.component.css"],
-  providers: [{ provide: PetService, useClass: CatService }]
+  providers: [{ provide: PetService, useClass: DogService }]
 })
 export class PetComponent {
   public pet: Pet = null;

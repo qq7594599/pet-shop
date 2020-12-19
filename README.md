@@ -19,20 +19,20 @@ Angular's DI framework provides dependencies to a class upon instantiation. You 
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root',  //singleton
 })
 export class HeroService {
   constructor() { }
 }
 ```
 
-2. Register the injectable service in `provider`
+2. Register the injectable service in `providers`
 
 ```typescript
-providers: [{provide: LoggingService}]
+providers: [{provide: HeroService}]
 ```
 
-3. Inject the service in constructor
+3. Declare the service in constructor
 ```typescript
 constructor(heroService: HeroService)
 ```
