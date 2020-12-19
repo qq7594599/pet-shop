@@ -1,3 +1,9 @@
-# pet-shop
+# Angular Dependency Injection Sample
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/pet-shop)
+## What's Dependency Injection
+
+## Why Dependency Injection
+
+## How Dependency Injection work in Angular project
+
+## About Pet Shop
